@@ -185,8 +185,8 @@ class DoubleLinkedList<T extends Comparable<T>> implements List<T> {
 		while (currentNode != null) {
 			nextNode = currentNode.getNextNode();// save current next node in nextNode pointer
 			currentNode.setNextNode(prevNode);// flip next node
-			prevNode = currentNode;
-			currentNode = nextNode;
+			prevNode = currentNode;//update pointer
+			currentNode = nextNode;//update pointer
 		}
 
 		this.head = prevNode;
