@@ -56,6 +56,8 @@ class DoubleLinkedList<T extends Comparable<T>> implements List<T> {
 	}
 
 	public void insertSorted(T data) {
+		
+		size++;
 		Node<T> newNode = new Node<T>(data);
 		// empty list
 		if (head == null) {
